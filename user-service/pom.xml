@@ -19,6 +19,10 @@
 		<java.version>1.8</java.version>
 		<jwt.version>0.9.0</jwt.version>
 		<lombok.version>1.18.4</lombok.version>
+		
+		<log4j.version>1.2.17</log4j.version>
+        <slf4j.version>1.7.13</slf4j.version>
+        <logback.version>1.1.3</logback.version>
 
 		<!-- sonar properties -->
 		<sonar.jacoco.reportPath>${project.basedir}/target/jacoco.exec</sonar.jacoco.reportPath>
@@ -89,6 +93,24 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- logback dependency -->
+		<dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>${logback.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>${assertj.version}</version>
+            <scope>test</scope>
+        </dependency>
 	</dependencies>
 	<build>
 		<pluginManagement>
